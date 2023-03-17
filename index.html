@@ -20,24 +20,24 @@
     <script>
 
         function main() {
-            var count = 0;
-            var numberContainer = document.getElementById('number-container');
+            let count = 0;
+            const numberContainer = document.getElementById('number-container');
 
-            var countElement = document.createElement('div');
+            const countElement = document.createElement('div');
             countElement.innerText = count;
 
             numberContainer.appendChild(countElement);
 
-            function calculate(event) {
+            const calculate = (event) => {
               count += parseInt(event.target.value);
               countElement.innerHTML = count;
             }
 
-            var buttons = document.getElementsByClassName('count-button');
+            const buttons = document.getElementsByClassName('count-button');
 
-            for (var i = 0; i < buttons.length; i++) {
-              buttons[i].addEventListener('click', calculate);
-            }
+            [...buttons].forEach((button) => {
+              button.addEventListener('click', calculate);
+            })
         }
 
         main();
