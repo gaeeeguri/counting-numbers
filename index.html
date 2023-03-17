@@ -5,11 +5,50 @@
     <title>Counting Numbers with VanilaJS</title>
 </head>
 <body>
-    <div>
-        <button>+5</button>
+    <div id="button-container">
+        <button id='add-button'>+5</button>
     </div>
-<div>
-    count: 0
+<div id="number-container">
+    <div>
+        count: 0
+    </div>
 </div>
+
+    <style>
+        #button-container {
+            background-color: #202023;
+        }
+
+        #add-button {
+            padding: 10px 25px;
+            font-size: 18px;
+            margin: 10px 20px;
+            background-color: #d6bcfa;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #add-button:hover {
+            cursor: pointer;
+            background-color: #a691c7;
+        }
+
+        #number-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 15px 25px;
+            background-color: #313134;
+        }
+
+        #number-container div {
+            font-size: 28px;
+            color: white;
+        }
+
+        body {
+            margin: 0;
+        }
+    </style>
 </body>
 </html>
