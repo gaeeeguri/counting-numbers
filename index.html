@@ -6,7 +6,10 @@
 </head>
 <body>
     <div id="button-container">
-        <button id='add-button'>+5</button>
+        <button class='count-button' value="1">+1</button>
+        <button class='count-button' value="5">+5</button>
+        <button class='count-button' value="-1">-1</button>
+        <button class='count-button' value="-5">-5</button>
     </div>
 <div id="number-container">
     <div>
@@ -25,14 +28,16 @@
 
             numberContainer.appendChild(countElement);
 
-            function add() {
-              count += 5;
+            function calculate(event) {
+              count += parseInt(event.target.value);
               countElement.innerHTML = count;
             }
 
-            var addButton = document.getElementById('add-button');
+            var buttons = document.getElementsByClassName('count-button');
 
-            addButton.addEventListener('click', add);
+            for (var i = 0; i < buttons.length; i++) {
+              buttons[i].addEventListener('click', calculate);
+            }
         }
 
         main();
@@ -41,9 +46,11 @@
     <style>
         #button-container {
             background-color: #202023;
+            display: flex;
+            justify-content: space-between;
         }
 
-        #add-button {
+        .count-button {
             padding: 10px 25px;
             font-size: 18px;
             margin: 10px 20px;
@@ -52,7 +59,7 @@
             border-radius: 5px;
         }
 
-        #add-button:hover {
+        .count-button:hover {
             cursor: pointer;
             background-color: #a691c7;
         }
