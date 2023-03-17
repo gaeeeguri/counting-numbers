@@ -10,9 +10,33 @@
     </div>
 <div id="number-container">
     <div>
-        count: 0
+        count:&nbsp;
     </div>
 </div>
+
+    <script>
+
+        function main() {
+            var count = 0;
+            var numberContainer = document.getElementById('number-container');
+
+            var countElement = document.createElement('div');
+            countElement.innerText = count;
+
+            numberContainer.appendChild(countElement);
+
+            function add() {
+              count += 5;
+              countElement.innerHTML = count;
+            }
+
+            var addButton = document.getElementById('add-button');
+
+            addButton.addEventListener('click', add);
+        }
+
+        main();
+    </script>
 
     <style>
         #button-container {
