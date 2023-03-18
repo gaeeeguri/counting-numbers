@@ -14,7 +14,7 @@
         "ecmaVersion": 5,
         "sourceType": "script",
         "ecmaFeatures": {
-            "jsx": false
+            "jsx": true
         }
     },
     "plugins": [
