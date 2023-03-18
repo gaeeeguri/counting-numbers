@@ -11,5 +11,9 @@
     "url": "https://www.github.com/gaeeeguri/counting-numbers"
   },
   "author": "gaeeeguri",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "eslint-plugin-react": "^7.32.2"
+  }
 }
