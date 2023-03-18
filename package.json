@@ -1,0 +1,15 @@
+{
+  "name": "counting-numbers",
+  "version": "1.0.0",
+  "description": "npm & lint tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/gaeeeguri/counting-numbers"
+  },
+  "author": "gaeeeguri",
+  "license": "MIT"
+}
