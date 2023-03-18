@@ -1,2 +1,17 @@
-# counting-numbers
-mop-dev course: counting numbers
+# 1. VanilaJS로 숫자 세기
+간단한 HTML, CSS, JavaScript를 이용해 숫자를 셉니다.
+
+---
+
+### 연습하기 with Git
+1. 레포지토리 포크(fork)하기
+2. 이미 작성된 커밋 내역을 따라하며 코드 작성 및 커밋하기
+3. (선택) 요구사항 추가하기
+    - ex) 숫자 리셋하는 버튼 추가하기
+    - ex) 숫자 크기에 비례하는 글자 크기 구현하기
+    - ex) 계산기 만들기
+4. 풀리퀘스트 생성하기
+    - 이름: `[github id] - vanilaJS`
+
+
+
