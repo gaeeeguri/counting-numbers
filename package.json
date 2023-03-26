@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "mop-dev course: counting numbers",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "react-scritps start"
+  },
   "keywords": [],
   "author": "Sengjin Park",
   "license": "ISC",
